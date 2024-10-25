@@ -34,15 +34,15 @@ export const CSSAppNumberRead = styled.div(function() { // для хранени
     }
 })
 
-export const CSSAppString = styled.div(function() { // экран куда вводятся цыфры
+export const CSSAppString = styled.div(function() { // экран куда вводятся цифры
     return {
         // border: '5px solid black',
         borderRadius: '50px',
         backgroundColor: '#cccccc',
         width: '405px',
         height: '50px',
-        marginLeft: '25px',
-        marginTop: '50px',
+        marginLeft: '28px',
+        marginTop: '30px',
         justifyContent: 'center',
         alignItems: 'center'
     }
