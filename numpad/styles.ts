@@ -3,11 +3,13 @@ import styled from "@emotion/styled";
 export const CSSButton = styled.button(function() {
     return {
         border:"1px solid white",
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '20px',
         width: '50px',
         height: '50px',
         borderRadius: '50px',
         marginLeft: '35px',
-        marginTop: '10px',
+        marginTop: '20px',
         boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.4)',
         transition: 'transform 0.3s, box-shadow 0.3s',
         '&:hover': {
@@ -26,6 +28,8 @@ export const CSSButton = styled.button(function() {
 export const CSSEnter = styled.button(function() {
     return {
         border:"1px solid white",
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '20px',
         width: '200px',
         height: '40px',
         borderRadius: '10px', 
