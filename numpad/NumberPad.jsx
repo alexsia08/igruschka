@@ -1,24 +1,12 @@
 import React from "react";
-import { CSSButton, CSSEnter } from "./styles"; // Похоже, что CSSButton не используется в коде
+import { CSSButton } from "./styles";
+import { useState } from 'react';
 
-export const NumberPad = () => {
-    return (
-        <>
-            <div>
-                <CSSButton>0</CSSButton>
-                <CSSButton>1</CSSButton>
-                <CSSButton>2</CSSButton>
-                <CSSButton>3</CSSButton>
-                <CSSButton>4</CSSButton>
-                <CSSButton>5</CSSButton>
-                <CSSButton>6</CSSButton>
-                <CSSButton>7</CSSButton>
-                <CSSButton>8</CSSButton>
-                <CSSButton>9</CSSButton>
-            </div>
-            <div>
-                <CSSEnter>Ввести</CSSEnter>
-            </div>
-        </>
-    );
-}
+export const NumberPad = ({ onAddNumber }) => {
+    return Array(10).fill().map((_, index) => (
+        <CSSButton key={index} onClick={() => onAddNumber(String(index))}>
+            {index}
+        </CSSButton>
+    ));
+};
+
