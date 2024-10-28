@@ -38,13 +38,16 @@ export const CSSAppString = styled.div(function() { // экран куда вв�
     return {
         // border: '5px solid black',
         borderRadius: '50px',
-        backgroundColor: '#cccccc',
+        backgroundColor: '#75c3ff',
         width: '405px',
         height: '50px',
         marginLeft: '28px',
         marginTop: '30px',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '40px',
+        textAlign: 'center',
     }
 })
 
@@ -80,5 +83,29 @@ export const CSSAppCows = styled.div(function() { // Коровы
         height: '50px',
         marginLeft: '270px',
         marginTop: '-50px',
+    }
+})
+
+export const CSSCircle = styled.div(function() {
+    return{
+        // border: '5px solid black',
+        backgroundColor: 'white',
+        borderRadius: '50px',
+        width: '35px',
+        height: '35px',
+        marginTop: '-35px',
+        marginLeft: '875px',
+    }
+})
+
+export const CSSCircleOne = styled.div(function() {
+    return{
+        // border: '5px solid black',
+        backgroundColor: 'white',
+        borderRadius: '50px',
+        width: '35px',
+        height: '35px',
+        marginTop: '-35px',
+        marginLeft: '830px',
     }
 })
