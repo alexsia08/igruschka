@@ -1,6 +1,5 @@
 import React from "react";
 import { CSSButton } from "./styles";
-import { useState } from 'react';
 
 export const NumberPad = ({ onAddNumber }) => {
     return Array(10).fill().map((_, index) => (
@@ -9,4 +8,3 @@ export const NumberPad = ({ onAddNumber }) => {
         </CSSButton>
     ));
 };
-
