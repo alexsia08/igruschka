@@ -67,22 +67,34 @@ export const CSSAppNumpad = styled.div(function() { // клавиатура
 export const CSSAppBulls = styled.div(function() { // Быки
     return {
         // border: '5px solid black',
+        borderRadius: '50px',
         backgroundColor: 'white',
         width: '170px',
         height: '50px',
         marginLeft: '80px',
         marginTop: '-124px',
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
 
 export const CSSAppCows = styled.div(function() { // Коровы
     return {
         // border: '5px solid black',
+        borderRadius: '50px',
         backgroundColor: 'white',
         width: '170px',
         height: '50px',
         marginLeft: '270px',
         marginTop: '-50px',
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
 
@@ -107,5 +119,16 @@ export const CSSCircleOne = styled.div(function() {
         height: '35px',
         marginTop: '-35px',
         marginLeft: '830px',
+    }
+})
+
+export const CSSLi = styled.li(function() {
+    return{
+        fontFamily: 'Times New Roman, Georgia, Garamond, serif',
+        fontSize: '20px',
+        listStyleType: 'none',
+        textAlign: 'center',
+        marginRight: '50px',
+        marginTop: '5px'
     }
 })
